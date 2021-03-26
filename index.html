@@ -13,50 +13,59 @@
 </head>
 
 <body>
-    <header>
-        <div class="gutter-right logo">
-            <img src="assets/big-logo.png" />
-        </div>
-    </header>
+
     <main>
         <section class="main-section">
             <div id="rpc">
                 <form id=rock-paper-scissors>
-                    <label>Rock
-                        <input id="rock" type="radio" name="rockpaperscissors" value="rock" />
+                    <label for="rock">
+                        <input class="hidden rock" id="rock" type="radio" name="rockpaperscissors" value="rock" />
+                        <img class="rock shadow"
+                            src="assets/0-8926_stones-and-rocks-png-image-rock-transparent-background.png">
                     </label>
-                    <label>Paper
-                        <input id="paper" type="radio" name="rockpaperscissors" value="paper" />
+                    <label for="paper">
+                        <input class="hidden paper" id="paper" type="radio" name="rockpaperscissors" value="paper" />
+                        <img class="paper shadow" src="assets/paper.jpeg">
                     </label>
-                    <label>Scissors
-                        <input id="scissors" type="radio" name="rockpaperscissors" value="scissors" />
+                    <label for="scissors">
+                        <input class="hidden scissors" id="scissors" type="radio" name="rockpaperscissors"
+                            value="scissors" />
+                        <img class="scissor shadow" src="assets/open-scissors.png">
                     </label>
                 </form>
-                <button id="throw">Throw!</button>
             </div>
-            <div id="what-happened">
+            <div class="buttons-div">
+                <div class="buttondiv" id="buttondiv">
+                    <label for="throw">throw
+                        <button class="hidden" id="throw">Throw!</button>
+                    </label>
+                </div>
+                <div class="resetbutton" id="resetbutton">
+                    <label for="reset">reset
+                        <button class="hidden" id="reset">Reset</button>
+                    </label>
+                </div>
+            </div>
+            <div class="resultsdiv" id="what-happened">
 
             </div>
-            <div id="wins">
+            <div class="resultsdiv" id="wins">
                 Wins:
             </div>
-            <div id="losses">
+            <div class="resultsdiv" id="losses">
                 Losses:
             </div>
-            <div id="draws">
+            <div class="resultsdiv" id="draws">
                 Draws:
             </div>
-            <div id="total">
+            <div class="resultsdiv" id="total">
                 Total:
             </div>
-            <button id="reset">Reset</button>
 
 
         </section>
     </main>
-    <footer>
-        <div class="copy gutter-right">&copy; 2020 Alchemy Code Lab</div>
-    </footer>
+
 
     <script type="module" src="app.js"></script>
 </body>
