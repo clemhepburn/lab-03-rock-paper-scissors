@@ -36,11 +36,13 @@ goButton.addEventListener('click', () => {
 
     } else if (whoWon === 'draw') {
         initState['draws']++;
+        initState['total']++;
         drawDiv.textContent = 'Draws: ' + initState['draws'];
         totalDiv.textContent = 'Total: ' + initState['total'];
         whoWonDiv.textContent = 'A draw!';
     } else {
         initState['losses']++;
+        initState['total']++;
         loseDiv.textContent = 'Losses: ' + initState['losses'];
         whoWonDiv.textContent = 'You lost. Computer threw ' + computerThrow + '.';
     }
@@ -54,6 +56,7 @@ resetButton.addEventListener('click', () => {
     drawDiv.textContent = 'Draws: 0';
     totalDiv.textContent = 'Total: 0';
     whoWonDiv.textContent = ' ';
+    initState['total'];
 
 
 });
