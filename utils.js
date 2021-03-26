@@ -2,22 +2,24 @@ export function checkIfWon(user, computer) {
     if (user === computer) {
         return 'draw';
     }
-    else if (player === 'rock' && computer === 'scissors') {
+    else if (user === 'rock' && computer === 'scissors') {
         return 'win';
     }
-    else if (player === 'rock' && computer === 'paper') {
+    else if (user === 'rock' && computer === 'paper') {
         return 'lose';
     }
-    else if (player === 'scissors' && computer === 'paper') {
+    else if (user === 'scissors' && computer === 'paper') {
         return 'win';
     }
-    else if (player === 'scissors' && computer === 'rock') {
+    else if (user === 'scissors' && computer === 'rock') {
         return 'lose';
     }
-    else if (player === 'paper' && computer === 'scissors') {
+    else if (user === 'paper' && computer === 'scissors') {
         return 'lose';
     }
-    else if (player === 'paper' && computer === 'rock') {
+    else if (user === 'paper' && computer === 'rock') {
+
+
         return 'win';
     }
 
